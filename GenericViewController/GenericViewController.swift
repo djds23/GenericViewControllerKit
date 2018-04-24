@@ -8,19 +8,28 @@
 
 import UIKit
 
-class GenericViewController: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+open class GenericViewController<ModelType>: UIViewController {
+  open var model: ModelType? {
+    didSet {
+      self.render()
     }
+  }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
+  override open func viewDidLoad() {
+      super.viewDidLoad()
+      self.render()
+  }
+
+  // set up your UI here instead
+  open func render() {
     
+  }
+
+  override open func didReceiveMemoryWarning() {
+      super.didReceiveMemoryWarning()
+      // Dispose of any resources that can be recreated.
+  }
+  
 
     /*
     // MARK: - Navigation
