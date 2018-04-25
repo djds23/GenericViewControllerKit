@@ -9,10 +9,23 @@
 import UIKit
 
 class PostsTableViewController: UITableViewController {
-
+    var posts: [Post] = [
+        Post(
+            title: "Swift is Fun",
+            authors: ["Dean Silfen"],
+            body: "I like writing swift because it has a pleasant type system",
+            liked: false
+        ),
+        Post(
+            title: "Swift is boring",
+            authors: ["Dean Silfen"],
+            body: "Swift is boring because the type system expresses concepts too clearly",
+            liked: true
+        )
+    ]
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.tableView.register(UITableViewCell.self, forCellReuseIdentifier: "reuseIdentifier")
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -34,18 +47,18 @@ class PostsTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return self.posts.count
     }
 
-    /*
+
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
-
-        // Configure the cell...
-
+        let post = self.posts[indexPath.row]
+        cell.textLabel?.text = post.title
+        cell.tintColor = post.liked ? UIColor(red:0.97, green:0.91, blue:0.98, alpha:1.0) : UIColor.white
         return cell
     }
-    */
+
 
     /*
     // Override to support conditional editing of the table view.

@@ -9,7 +9,8 @@
 import UIKit
 
 struct Post {
-  let title: String
-  let authors: [String]
-  let body: String
+    let title: String
+    let authors: [String]
+    let body: String
+    let liked: Bool
 }

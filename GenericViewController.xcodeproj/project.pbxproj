@@ -7,11 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7B87DCCB2090E9D000256331 /* PostsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B87DCCA2090E9D000256331 /* PostsTableViewController.swift */; };
 		7BD8215F208FE2A300992197 /* GenericViewController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BD82155208FE2A300992197 /* GenericViewController.framework */; };
 		7BD82164208FE2A300992197 /* GenericViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BD82163208FE2A300992197 /* GenericViewControllerTests.swift */; };
 		7BD82166208FE2A300992197 /* GenericViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 7BD82158208FE2A300992197 /* GenericViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7BD82176208FE2BA00992197 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BD82175208FE2BA00992197 /* AppDelegate.swift */; };
-		7BD82178208FE2BA00992197 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BD82177208FE2BA00992197 /* ViewController.swift */; };
 		7BD8217B208FE2BA00992197 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BD82179208FE2BA00992197 /* Main.storyboard */; };
 		7BD8217D208FE2BC00992197 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7BD8217C208FE2BC00992197 /* Assets.xcassets */; };
 		7BD82180208FE2BC00992197 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BD8217E208FE2BC00992197 /* LaunchScreen.storyboard */; };
@@ -70,6 +70,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		7B87DCCA2090E9D000256331 /* PostsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsTableViewController.swift; sourceTree = "<group>"; };
 		7BD82155208FE2A300992197 /* GenericViewController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GenericViewController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7BD82158208FE2A300992197 /* GenericViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GenericViewController.h; sourceTree = "<group>"; };
 		7BD82159208FE2A300992197 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -78,7 +79,6 @@
 		7BD82165208FE2A300992197 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7BD82173208FE2BA00992197 /* GenericViewControllerDemoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GenericViewControllerDemoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7BD82175208FE2BA00992197 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		7BD82177208FE2BA00992197 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		7BD8217A208FE2BA00992197 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7BD8217C208FE2BC00992197 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7BD8217F208FE2BC00992197 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -182,13 +182,13 @@
 			isa = PBXGroup;
 			children = (
 				7BD82175208FE2BA00992197 /* AppDelegate.swift */,
-				7BD82177208FE2BA00992197 /* ViewController.swift */,
 				7BD82179208FE2BA00992197 /* Main.storyboard */,
 				7BD8217C208FE2BC00992197 /* Assets.xcassets */,
 				7BD8217E208FE2BC00992197 /* LaunchScreen.storyboard */,
 				7BD82181208FE2BC00992197 /* Info.plist */,
 				7BD821A8208FE49400992197 /* PostViewController.swift */,
 				7BD821AA208FE4A400992197 /* Post.swift */,
+				7B87DCCA2090E9D000256331 /* PostsTableViewController.swift */,
 			);
 			path = GenericViewControllerDemoApp;
 			sourceTree = "<group>";
@@ -431,7 +431,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7BD821A9208FE49400992197 /* PostViewController.swift in Sources */,
-				7BD82178208FE2BA00992197 /* ViewController.swift in Sources */,
+				7B87DCCB2090E9D000256331 /* PostsTableViewController.swift in Sources */,
 				7BD82176208FE2BA00992197 /* AppDelegate.swift in Sources */,
 				7BD821AB208FE4A400992197 /* Post.swift in Sources */,
 			);
