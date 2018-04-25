@@ -20,5 +20,7 @@ open class GenericViewController<ModelType>: UIViewController {
         self.render()
     }
 
-    open func render() { }
+    open func render() {
+        // #warning Incomplete implementation, override to update your view when the model changes
+    }
 }
