@@ -55,7 +55,7 @@ class PostsTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
         let post = self.posts[indexPath.row]
         cell.textLabel?.text = post.title
-        cell.tintColor = post.liked ? UIColor(red:0.97, green:0.91, blue:0.98, alpha:1.0) : UIColor.white
+        cell.backgroundColor = post.liked ? UIColor(red:0.97, green:0.91, blue:0.98, alpha:1.0) : UIColor.white
         return cell
     }
 
