@@ -142,7 +142,7 @@
 		7BD8214B208FE2A200992197 = {
 			isa = PBXGroup;
 			children = (
-				7BD82157208FE2A300992197 /* GenericViewController */,
+				7BD82157208FE2A300992197 /* GenericViewControllerKit */,
 				7BD82162208FE2A300992197 /* GenericViewControllerTests */,
 				7BD82174208FE2BA00992197 /* GenericViewControllerDemoApp */,
 				7BD82189208FE2BC00992197 /* GenericViewControllerDemoAppTests */,
@@ -163,7 +163,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		7BD82157208FE2A300992197 /* GenericViewController */ = {
+		7BD82157208FE2A300992197 /* GenericViewControllerKit */ = {
 			isa = PBXGroup;
 			children = (
 				7BD82158208FE2A300992197 /* GenericViewController.h */,
@@ -171,7 +171,7 @@
 				7BD82159208FE2A300992197 /* Info.plist */,
 				7BC87C36209201D300DC00E7 /* GenericTableViewController.swift */,
 			);
-			path = GenericViewController;
+			path = GenericViewControllerKit;
 			sourceTree = "<group>";
 		};
 		7BD82162208FE2A300992197 /* GenericViewControllerTests */ = {
@@ -629,7 +629,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = GenericViewController/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/GenericViewControllerKit/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -656,7 +656,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = GenericViewController/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/GenericViewControllerKit/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
