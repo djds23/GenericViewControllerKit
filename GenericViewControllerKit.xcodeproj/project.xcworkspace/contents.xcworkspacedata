@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:GenericViewController.xcodeproj">
+      location = "self:/Users/deansilfen/Projects/GenericViewController/GenericViewControllerKit.xcodeproj">
    </FileRef>
 </Workspace>

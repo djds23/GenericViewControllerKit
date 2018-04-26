@@ -12,7 +12,7 @@
 		7BC87C33209170E600DC00E7 /* PostViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7BC87C31209170E600DC00E7 /* PostViewController.xib */; };
 		7BC87C352091FF0100DC00E7 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC87C342091FF0100DC00E7 /* UIColor.swift */; };
 		7BC87C37209201D300DC00E7 /* GenericTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC87C36209201D300DC00E7 /* GenericTableViewController.swift */; };
-		7BD8215F208FE2A300992197 /* GenericViewController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BD82155208FE2A300992197 /* GenericViewController.framework */; };
+		7BD8215F208FE2A300992197 /* GenericViewControllerKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BD82155208FE2A300992197 /* GenericViewControllerKit.framework */; };
 		7BD82164208FE2A300992197 /* GenericViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BD82163208FE2A300992197 /* GenericViewControllerTests.swift */; };
 		7BD82166208FE2A300992197 /* GenericViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 7BD82158208FE2A300992197 /* GenericViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7BD82176208FE2BA00992197 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BD82175208FE2BA00992197 /* AppDelegate.swift */; };
@@ -20,8 +20,8 @@
 		7BD82180208FE2BC00992197 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BD8217E208FE2BC00992197 /* LaunchScreen.storyboard */; };
 		7BD8218B208FE2BC00992197 /* GenericViewControllerDemoAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BD8218A208FE2BC00992197 /* GenericViewControllerDemoAppTests.swift */; };
 		7BD82196208FE2BC00992197 /* GenericViewControllerDemoAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BD82195208FE2BC00992197 /* GenericViewControllerDemoAppUITests.swift */; };
-		7BD821A1208FE2D500992197 /* GenericViewController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BD82155208FE2A300992197 /* GenericViewController.framework */; };
-		7BD821A2208FE2D500992197 /* GenericViewController.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7BD82155208FE2A300992197 /* GenericViewController.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		7BD821A1208FE2D500992197 /* GenericViewControllerKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BD82155208FE2A300992197 /* GenericViewControllerKit.framework */; };
+		7BD821A2208FE2D500992197 /* GenericViewControllerKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7BD82155208FE2A300992197 /* GenericViewControllerKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		7BD821A7208FE32700992197 /* GenericViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BD821A6208FE32700992197 /* GenericViewController.swift */; };
 		7BD821AB208FE4A400992197 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BD821AA208FE4A400992197 /* Post.swift */; };
 /* End PBXBuildFile section */
@@ -64,7 +64,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				7BD821A2208FE2D500992197 /* GenericViewController.framework in Embed Frameworks */,
+				7BD821A2208FE2D500992197 /* GenericViewControllerKit.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -77,21 +77,21 @@
 		7BC87C31209170E600DC00E7 /* PostViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostViewController.xib; sourceTree = "<group>"; };
 		7BC87C342091FF0100DC00E7 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		7BC87C36209201D300DC00E7 /* GenericTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericTableViewController.swift; sourceTree = "<group>"; };
-		7BD82155208FE2A300992197 /* GenericViewController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GenericViewController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7BD82155208FE2A300992197 /* GenericViewControllerKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GenericViewControllerKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7BD82158208FE2A300992197 /* GenericViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GenericViewController.h; sourceTree = "<group>"; };
 		7BD82159208FE2A300992197 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7BD8215E208FE2A300992197 /* GenericViewControllerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GenericViewControllerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7BD8215E208FE2A300992197 /* GenericViewControllerKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GenericViewControllerKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7BD82163208FE2A300992197 /* GenericViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericViewControllerTests.swift; sourceTree = "<group>"; };
 		7BD82165208FE2A300992197 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7BD82173208FE2BA00992197 /* GenericViewControllerDemoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GenericViewControllerDemoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7BD82173208FE2BA00992197 /* GenericViewControllerKitDemoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GenericViewControllerKitDemoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7BD82175208FE2BA00992197 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7BD8217C208FE2BC00992197 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7BD8217F208FE2BC00992197 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7BD82181208FE2BC00992197 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7BD82186208FE2BC00992197 /* GenericViewControllerDemoAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GenericViewControllerDemoAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7BD82186208FE2BC00992197 /* GenericViewControllerKitDemoAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GenericViewControllerKitDemoAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7BD8218A208FE2BC00992197 /* GenericViewControllerDemoAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericViewControllerDemoAppTests.swift; sourceTree = "<group>"; };
 		7BD8218C208FE2BC00992197 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7BD82191208FE2BC00992197 /* GenericViewControllerDemoAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GenericViewControllerDemoAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7BD82191208FE2BC00992197 /* GenericViewControllerKitDemoAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GenericViewControllerKitDemoAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7BD82195208FE2BC00992197 /* GenericViewControllerDemoAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericViewControllerDemoAppUITests.swift; sourceTree = "<group>"; };
 		7BD82197208FE2BC00992197 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7BD821A6208FE32700992197 /* GenericViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericViewController.swift; sourceTree = "<group>"; };
@@ -110,7 +110,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7BD8215F208FE2A300992197 /* GenericViewController.framework in Frameworks */,
+				7BD8215F208FE2A300992197 /* GenericViewControllerKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -118,7 +118,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7BD821A1208FE2D500992197 /* GenericViewController.framework in Frameworks */,
+				7BD821A1208FE2D500992197 /* GenericViewControllerKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -154,11 +154,11 @@
 		7BD82156208FE2A300992197 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				7BD82155208FE2A300992197 /* GenericViewController.framework */,
-				7BD8215E208FE2A300992197 /* GenericViewControllerTests.xctest */,
-				7BD82173208FE2BA00992197 /* GenericViewControllerDemoApp.app */,
-				7BD82186208FE2BC00992197 /* GenericViewControllerDemoAppTests.xctest */,
-				7BD82191208FE2BC00992197 /* GenericViewControllerDemoAppUITests.xctest */,
+				7BD82155208FE2A300992197 /* GenericViewControllerKit.framework */,
+				7BD8215E208FE2A300992197 /* GenericViewControllerKitTests.xctest */,
+				7BD82173208FE2BA00992197 /* GenericViewControllerKitDemoApp.app */,
+				7BD82186208FE2BC00992197 /* GenericViewControllerKitDemoAppTests.xctest */,
+				7BD82191208FE2BC00992197 /* GenericViewControllerKitDemoAppUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -231,9 +231,9 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		7BD82154208FE2A200992197 /* GenericViewController */ = {
+		7BD82154208FE2A200992197 /* GenericViewControllerKit */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7BD82169208FE2A300992197 /* Build configuration list for PBXNativeTarget "GenericViewController" */;
+			buildConfigurationList = 7BD82169208FE2A300992197 /* Build configuration list for PBXNativeTarget "GenericViewControllerKit" */;
 			buildPhases = (
 				7BD82150208FE2A200992197 /* Sources */,
 				7BD82151208FE2A200992197 /* Frameworks */,
@@ -244,14 +244,14 @@
 			);
 			dependencies = (
 			);
-			name = GenericViewController;
+			name = GenericViewControllerKit;
 			productName = GenericViewController;
-			productReference = 7BD82155208FE2A300992197 /* GenericViewController.framework */;
+			productReference = 7BD82155208FE2A300992197 /* GenericViewControllerKit.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		7BD8215D208FE2A300992197 /* GenericViewControllerTests */ = {
+		7BD8215D208FE2A300992197 /* GenericViewControllerKitTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7BD8216C208FE2A300992197 /* Build configuration list for PBXNativeTarget "GenericViewControllerTests" */;
+			buildConfigurationList = 7BD8216C208FE2A300992197 /* Build configuration list for PBXNativeTarget "GenericViewControllerKitTests" */;
 			buildPhases = (
 				7BD8215A208FE2A300992197 /* Sources */,
 				7BD8215B208FE2A300992197 /* Frameworks */,
@@ -262,14 +262,14 @@
 			dependencies = (
 				7BD82161208FE2A300992197 /* PBXTargetDependency */,
 			);
-			name = GenericViewControllerTests;
+			name = GenericViewControllerKitTests;
 			productName = GenericViewControllerTests;
-			productReference = 7BD8215E208FE2A300992197 /* GenericViewControllerTests.xctest */;
+			productReference = 7BD8215E208FE2A300992197 /* GenericViewControllerKitTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		7BD82172208FE2BA00992197 /* GenericViewControllerDemoApp */ = {
+		7BD82172208FE2BA00992197 /* GenericViewControllerKitDemoApp */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7BD82198208FE2BC00992197 /* Build configuration list for PBXNativeTarget "GenericViewControllerDemoApp" */;
+			buildConfigurationList = 7BD82198208FE2BC00992197 /* Build configuration list for PBXNativeTarget "GenericViewControllerKitDemoApp" */;
 			buildPhases = (
 				7BD8216F208FE2BA00992197 /* Sources */,
 				7BD82170208FE2BA00992197 /* Frameworks */,
@@ -281,14 +281,14 @@
 			dependencies = (
 				7BD821A4208FE2D500992197 /* PBXTargetDependency */,
 			);
-			name = GenericViewControllerDemoApp;
+			name = GenericViewControllerKitDemoApp;
 			productName = GenericViewControllerDemoApp;
-			productReference = 7BD82173208FE2BA00992197 /* GenericViewControllerDemoApp.app */;
+			productReference = 7BD82173208FE2BA00992197 /* GenericViewControllerKitDemoApp.app */;
 			productType = "com.apple.product-type.application";
 		};
-		7BD82185208FE2BC00992197 /* GenericViewControllerDemoAppTests */ = {
+		7BD82185208FE2BC00992197 /* GenericViewControllerKitDemoAppTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7BD8219B208FE2BC00992197 /* Build configuration list for PBXNativeTarget "GenericViewControllerDemoAppTests" */;
+			buildConfigurationList = 7BD8219B208FE2BC00992197 /* Build configuration list for PBXNativeTarget "GenericViewControllerKitDemoAppTests" */;
 			buildPhases = (
 				7BD82182208FE2BC00992197 /* Sources */,
 				7BD82183208FE2BC00992197 /* Frameworks */,
@@ -299,14 +299,14 @@
 			dependencies = (
 				7BD82188208FE2BC00992197 /* PBXTargetDependency */,
 			);
-			name = GenericViewControllerDemoAppTests;
+			name = GenericViewControllerKitDemoAppTests;
 			productName = GenericViewControllerDemoAppTests;
-			productReference = 7BD82186208FE2BC00992197 /* GenericViewControllerDemoAppTests.xctest */;
+			productReference = 7BD82186208FE2BC00992197 /* GenericViewControllerKitDemoAppTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		7BD82190208FE2BC00992197 /* GenericViewControllerDemoAppUITests */ = {
+		7BD82190208FE2BC00992197 /* GenericViewControllerKitDemoAppUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7BD8219E208FE2BC00992197 /* Build configuration list for PBXNativeTarget "GenericViewControllerDemoAppUITests" */;
+			buildConfigurationList = 7BD8219E208FE2BC00992197 /* Build configuration list for PBXNativeTarget "GenericViewControllerKitDemoAppUITests" */;
 			buildPhases = (
 				7BD8218D208FE2BC00992197 /* Sources */,
 				7BD8218E208FE2BC00992197 /* Frameworks */,
@@ -317,9 +317,9 @@
 			dependencies = (
 				7BD82193208FE2BC00992197 /* PBXTargetDependency */,
 			);
-			name = GenericViewControllerDemoAppUITests;
+			name = GenericViewControllerKitDemoAppUITests;
 			productName = GenericViewControllerDemoAppUITests;
-			productReference = 7BD82191208FE2BC00992197 /* GenericViewControllerDemoAppUITests.xctest */;
+			productReference = 7BD82191208FE2BC00992197 /* GenericViewControllerKitDemoAppUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -352,7 +352,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 7BD8214F208FE2A200992197 /* Build configuration list for PBXProject "GenericViewController" */;
+			buildConfigurationList = 7BD8214F208FE2A200992197 /* Build configuration list for PBXProject "GenericViewControllerKit" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -365,11 +365,11 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				7BD82154208FE2A200992197 /* GenericViewController */,
-				7BD8215D208FE2A300992197 /* GenericViewControllerTests */,
-				7BD82172208FE2BA00992197 /* GenericViewControllerDemoApp */,
-				7BD82185208FE2BC00992197 /* GenericViewControllerDemoAppTests */,
-				7BD82190208FE2BC00992197 /* GenericViewControllerDemoAppUITests */,
+				7BD82154208FE2A200992197 /* GenericViewControllerKit */,
+				7BD8215D208FE2A300992197 /* GenericViewControllerKitTests */,
+				7BD82172208FE2BA00992197 /* GenericViewControllerKitDemoApp */,
+				7BD82185208FE2BC00992197 /* GenericViewControllerKitDemoAppTests */,
+				7BD82190208FE2BC00992197 /* GenericViewControllerKitDemoAppUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -466,22 +466,22 @@
 /* Begin PBXTargetDependency section */
 		7BD82161208FE2A300992197 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 7BD82154208FE2A200992197 /* GenericViewController */;
+			target = 7BD82154208FE2A200992197 /* GenericViewControllerKit */;
 			targetProxy = 7BD82160208FE2A300992197 /* PBXContainerItemProxy */;
 		};
 		7BD82188208FE2BC00992197 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 7BD82172208FE2BA00992197 /* GenericViewControllerDemoApp */;
+			target = 7BD82172208FE2BA00992197 /* GenericViewControllerKitDemoApp */;
 			targetProxy = 7BD82187208FE2BC00992197 /* PBXContainerItemProxy */;
 		};
 		7BD82193208FE2BC00992197 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 7BD82172208FE2BA00992197 /* GenericViewControllerDemoApp */;
+			target = 7BD82172208FE2BA00992197 /* GenericViewControllerKitDemoApp */;
 			targetProxy = 7BD82192208FE2BC00992197 /* PBXContainerItemProxy */;
 		};
 		7BD821A4208FE2D500992197 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 7BD82154208FE2A200992197 /* GenericViewController */;
+			target = 7BD82154208FE2A200992197 /* GenericViewControllerKit */;
 			targetProxy = 7BD821A3208FE2D500992197 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -764,7 +764,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GenericViewControllerDemoApp.app/GenericViewControllerDemoApp";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GenericViewControllerKitDemoApp.app/GenericViewControllerKitDemoApp";
 			};
 			name = Debug;
 		};
@@ -785,7 +785,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GenericViewControllerDemoApp.app/GenericViewControllerDemoApp";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GenericViewControllerKitDemoApp.app/GenericViewControllerKitDemoApp";
 			};
 			name = Release;
 		};
@@ -832,7 +832,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		7BD8214F208FE2A200992197 /* Build configuration list for PBXProject "GenericViewController" */ = {
+		7BD8214F208FE2A200992197 /* Build configuration list for PBXProject "GenericViewControllerKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7BD82167208FE2A300992197 /* Debug */,
@@ -841,7 +841,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7BD82169208FE2A300992197 /* Build configuration list for PBXNativeTarget "GenericViewController" */ = {
+		7BD82169208FE2A300992197 /* Build configuration list for PBXNativeTarget "GenericViewControllerKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7BD8216A208FE2A300992197 /* Debug */,
@@ -850,7 +850,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7BD8216C208FE2A300992197 /* Build configuration list for PBXNativeTarget "GenericViewControllerTests" */ = {
+		7BD8216C208FE2A300992197 /* Build configuration list for PBXNativeTarget "GenericViewControllerKitTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7BD8216D208FE2A300992197 /* Debug */,
@@ -859,7 +859,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7BD82198208FE2BC00992197 /* Build configuration list for PBXNativeTarget "GenericViewControllerDemoApp" */ = {
+		7BD82198208FE2BC00992197 /* Build configuration list for PBXNativeTarget "GenericViewControllerKitDemoApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7BD82199208FE2BC00992197 /* Debug */,
@@ -868,7 +868,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7BD8219B208FE2BC00992197 /* Build configuration list for PBXNativeTarget "GenericViewControllerDemoAppTests" */ = {
+		7BD8219B208FE2BC00992197 /* Build configuration list for PBXNativeTarget "GenericViewControllerKitDemoAppTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7BD8219C208FE2BC00992197 /* Debug */,
@@ -877,7 +877,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7BD8219E208FE2BC00992197 /* Build configuration list for PBXNativeTarget "GenericViewControllerDemoAppUITests" */ = {
+		7BD8219E208FE2BC00992197 /* Build configuration list for PBXNativeTarget "GenericViewControllerKitDemoAppUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7BD8219F208FE2BC00992197 /* Debug */,
