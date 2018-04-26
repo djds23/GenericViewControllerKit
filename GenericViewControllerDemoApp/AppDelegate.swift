@@ -18,7 +18,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     self.window = UIWindow(frame: UIScreen.main.bounds)
     let initialViewController = PostsTableViewController()
-    self.window?.rootViewController = initialViewController
+    self.window?.rootViewController = UINavigationController(rootViewController: initialViewController)
     self.window?.makeKeyAndVisible()
     return true
   }
