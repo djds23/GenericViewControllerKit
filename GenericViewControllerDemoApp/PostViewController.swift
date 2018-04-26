@@ -9,14 +9,23 @@
 import UIKit
 import GenericViewController
 
+protocol PostViewControllerDelegate: class {
+    func postViewController(postViewController: PostViewController, didToggleLikeFor post: Post)
+}
+
 class PostViewController: GenericViewController<Post> {
+    weak var delegate: PostViewControllerDelegate?
     @IBOutlet weak var stackView: UIStackView!
     lazy var titleLabel = { () -> UILabel in
-        return UILabel()
+        let label = UILabel()
+        label.numberOfLines = 0
+        return label
     }()
 
     lazy var bodyLabel = { () -> UILabel in
-        return UILabel()
+        let label = UILabel()
+        label.numberOfLines = 0
+        return label
     }()
 
     override func viewDidLoad() {
@@ -39,5 +48,8 @@ class PostViewController: GenericViewController<Post> {
     }
 
     @IBAction func toggleLike(_ sender: Any) {
+        if let post = self.model {
+            self.delegate?.postViewController(postViewController: self, didToggleLikeFor: post)
+        }
     }
 }

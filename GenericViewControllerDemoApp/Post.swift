@@ -8,9 +8,8 @@
 
 import UIKit
 
-struct Post {
+struct Post: Equatable {
     let title: String
-    let authors: [String]
     let body: String
     let liked: Bool
 }

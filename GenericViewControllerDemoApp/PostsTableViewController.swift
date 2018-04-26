@@ -12,13 +12,11 @@ class PostsTableViewController: UITableViewController {
     var posts: [Post] = [
         Post(
             title: "Swift is Fun",
-            authors: ["Dean Silfen"],
             body: "I like writing swift because it has a pleasant type system",
             liked: false
         ),
         Post(
             title: "Swift is boring",
-            authors: ["Dean Silfen"],
             body: "Swift is boring because the type system expresses concepts too clearly",
             liked: true
         )
@@ -63,6 +61,7 @@ class PostsTableViewController: UITableViewController {
         let postViewController = PostViewController(nibName: "PostViewController", bundle: Bundle.main)
         self.navigationController?.pushViewController(postViewController, animated: true)
         postViewController.model = post
+        postViewController.delegate = self
     }
     /*
     // Override to support conditional editing of the table view.
@@ -108,5 +107,24 @@ class PostsTableViewController: UITableViewController {
         // Pass the selected object to the new view controller.
     }
     */
+}
 
+extension PostsTableViewController: PostViewControllerDelegate {
+    func postViewController(postViewController: PostViewController, didToggleLikeFor post: Post) {
+        let index = self.posts.index { (foundPost) -> Bool in
+            foundPost == post
+        }
+        guard let i = index else {
+            return
+        }
+        self.posts.remove(at: i)
+        let newPost = Post(
+            title: post.title,
+            body: post.body,
+            liked: !post.liked
+        )
+        self.posts.append(newPost)
+        self.tableView.reloadData()
+        postViewController.model = newPost
+    }
 }
