@@ -8,7 +8,14 @@
 
 import UIKit
 
+/// A subclass of UITableViewController that leverages swift
+/// generics to have a type safe model-view relationship.
 open class GenericTableViewController<ModelType>: UITableViewController {
+    
+    /// `model` a generic property that should
+    /// be used to determine the behavior and look
+    /// of the tableView. When a new model is set,
+    /// the tableView will be reloaded.
     open var model: ModelType? {
         didSet {
             self.tableView.reloadData()
