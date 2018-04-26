@@ -1,0 +1,33 @@
+{
+  "warnings": [
+    {
+      "file": "/Users/deansilfen/Projects/GenericViewControllerKit/GenericViewControllerKit/GenericTableViewController.swift",
+      "line": 24,
+      "symbol": "GenericTableViewController.viewDidLoad()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/deansilfen/Projects/GenericViewControllerKit/GenericViewControllerKit/GenericTableViewController.swift",
+      "line": 34,
+      "symbol": "GenericTableViewController.didReceiveMemoryWarning()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/deansilfen/Projects/GenericViewControllerKit/GenericViewControllerKit/GenericTableViewController.swift",
+      "line": 41,
+      "symbol": "GenericTableViewController.numberOfSections(in:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/deansilfen/Projects/GenericViewControllerKit/GenericViewControllerKit/GenericTableViewController.swift",
+      "line": 46,
+      "symbol": "GenericTableViewController.tableView(_:numberOfRowsInSection:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    }
+  ],
+  "source_directory": "/Users/deansilfen/Projects/GenericViewControllerKit"
+}

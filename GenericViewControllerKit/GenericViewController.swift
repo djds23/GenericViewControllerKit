@@ -21,6 +21,15 @@ open class GenericViewController<ModelType>: UIViewController {
         }
     }
 
+    /// Hook to call `render()` on
+    /// initial load.
+    ///
+    /// ### Subclass Note
+    ///
+    /// If you override `viewDidLoad` you should
+    /// call `super`. You do not need to call `render()`
+    /// in your subclassed `viewDidLoad` since it is
+    /// called by the superclass.
     override open func viewDidLoad() {
         super.viewDidLoad()
         self.render()

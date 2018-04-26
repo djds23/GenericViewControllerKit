@@ -1,0 +1,4 @@
+framework module GenericViewControllerKit {
+    header "GenericViewControllerKit-Swift.h"
+    requires objc
+}

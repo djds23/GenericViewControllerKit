@@ -1,0 +1,33 @@
+{
+  'version': 0,
+  'case-sensitive': 'false',
+  'roots': [
+    {
+      'type': 'directory',
+      'name': "/Users/deansilfen/Projects/GenericViewControllerKit/build/Release-iphoneos/GenericViewControllerKit.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "GenericViewController.h",
+          'external-contents': "/Users/deansilfen/Projects/GenericViewControllerKit/GenericViewControllerKit/GenericViewController.h"
+        },
+        {
+          'type': 'file',
+          'name': "GenericViewControllerKit-Swift.h",
+          'external-contents': "/Users/deansilfen/Projects/GenericViewControllerKit/build/Release-iphoneos/GenericViewControllerKit.framework/Headers/GenericViewControllerKit-Swift.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/deansilfen/Projects/GenericViewControllerKit/build/Release-iphoneos/GenericViewControllerKit.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/deansilfen/Projects/GenericViewControllerKit/build/GenericViewControllerKit.build/Release-iphoneos/GenericViewControllerKit.build/module.modulemap"
+        }
+      ]
+    }
+  ]
+}

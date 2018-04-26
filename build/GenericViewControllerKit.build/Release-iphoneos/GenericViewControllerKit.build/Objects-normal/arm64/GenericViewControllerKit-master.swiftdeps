@@ -1,0 +1,6 @@
+version: "Apple Swift version 4.1 (swiftlang-902.0.48 clang-902.0.37.1)"
+options: "7cb1c09fd74b4ed0d0f407cedba3cdd2"
+build_time: [1524749844, 110568000]
+inputs:
+  "/Users/deansilfen/Projects/GenericViewControllerKit/GenericViewControllerKit/GenericTableViewController.swift": [9223372036, 854775807]
+  "/Users/deansilfen/Projects/GenericViewControllerKit/GenericViewControllerKit/GenericViewController.swift": [9223372036, 854775807]
