@@ -37,7 +37,7 @@ class PostViewController: GenericViewController<Post> {
     
     override func render() {
         if let post = self.model {
-            self.view.backgroundColor = post.liked ? UIColor(red:0.97, green:0.91, blue:0.98, alpha:1.0) : UIColor.white
+            self.view.backgroundColor = post.liked ? UIColor.pink : UIColor.white
             self.titleLabel.text = post.title
             self.bodyLabel.text = post.body
         } else {

@@ -7,22 +7,23 @@
 //
 
 import UIKit
+import GenericViewController
 
-class PostsTableViewController: UITableViewController {
-    var posts: [Post] = [
-        Post(
-            title: "Swift is Fun",
-            body: "I like writing swift because it has a pleasant type system",
-            liked: false
-        ),
-        Post(
-            title: "Swift is boring",
-            body: "Swift is boring because the type system expresses concepts too clearly",
-            liked: true
-        )
-    ]
+class PostsTableViewController: GenericTableViewController<[Post]> {
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.model = [
+            Post(
+                title: "Swift is Fun",
+                body: "I like writing swift because it has a pleasant type system",
+                liked: false
+            ),
+            Post(
+                title: "Swift is boring",
+                body: "Swift is boring because the type system expresses concepts too clearly",
+                liked: true
+            )
+        ]
         self.tableView.register(UITableViewCell.self, forCellReuseIdentifier: "reuseIdentifier")
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -31,100 +32,54 @@ class PostsTableViewController: UITableViewController {
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
         return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return self.posts.count
+        return self.model?.count ?? 0
     }
 
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
-        let post = self.posts[indexPath.row]
+        guard let post = self.model?[indexPath.row] else {
+            return cell
+        }
+
         cell.textLabel?.text = post.title
         cell.backgroundColor = post.liked ? UIColor(red:0.97, green:0.91, blue:0.98, alpha:1.0) : UIColor.white
         return cell
     }
 
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let post = self.posts[indexPath.row]
+        guard let post = self.model?[indexPath.row] else {
+            return
+        }
         let postViewController = PostViewController(nibName: "PostViewController", bundle: Bundle.main)
         self.navigationController?.pushViewController(postViewController, animated: true)
         postViewController.model = post
         postViewController.delegate = self
     }
-    /*
-    // Override to support conditional editing of the table view.
-    override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the specified item to be editable.
-        return true
-    }
-    */
-
-    /*
-    // Override to support editing the table view.
-    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
-        if editingStyle == .delete {
-            // Delete the row from the data source
-            tableView.deleteRows(at: [indexPath], with: .fade)
-        } else if editingStyle == .insert {
-            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-        }    
-    }
-    */
-
-    /*
-    // Override to support rearranging the table view.
-    override func tableView(_ tableView: UITableView, moveRowAt fromIndexPath: IndexPath, to: IndexPath) {
-
-    }
-    */
-
-    /*
-    // Override to support conditional rearranging of the table view.
-    override func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the item to be re-orderable.
-        return true
-    }
-    */
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 }
 
 extension PostsTableViewController: PostViewControllerDelegate {
     func postViewController(postViewController: PostViewController, didToggleLikeFor post: Post) {
-        let index = self.posts.index { (foundPost) -> Bool in
+        let index = self.model?.index { (foundPost) -> Bool in
             foundPost == post
         }
         guard let i = index else {
             return
         }
-        self.posts.remove(at: i)
+        self.model?.remove(at: i)
         let newPost = Post(
             title: post.title,
             body: post.body,
             liked: !post.liked
         )
-        self.posts.append(newPost)
-        self.tableView.reloadData()
+        self.model = (self.model ?? []) + [newPost]
         postViewController.model = newPost
     }
 }

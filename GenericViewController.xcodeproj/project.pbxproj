@@ -10,6 +10,8 @@
 		7B87DCCB2090E9D000256331 /* PostsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B87DCCA2090E9D000256331 /* PostsTableViewController.swift */; };
 		7BC87C32209170E600DC00E7 /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC87C30209170E600DC00E7 /* PostViewController.swift */; };
 		7BC87C33209170E600DC00E7 /* PostViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7BC87C31209170E600DC00E7 /* PostViewController.xib */; };
+		7BC87C352091FF0100DC00E7 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC87C342091FF0100DC00E7 /* UIColor.swift */; };
+		7BC87C37209201D300DC00E7 /* GenericTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC87C36209201D300DC00E7 /* GenericTableViewController.swift */; };
 		7BD8215F208FE2A300992197 /* GenericViewController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BD82155208FE2A300992197 /* GenericViewController.framework */; };
 		7BD82164208FE2A300992197 /* GenericViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BD82163208FE2A300992197 /* GenericViewControllerTests.swift */; };
 		7BD82166208FE2A300992197 /* GenericViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 7BD82158208FE2A300992197 /* GenericViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -73,6 +75,8 @@
 		7B87DCCA2090E9D000256331 /* PostsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsTableViewController.swift; sourceTree = "<group>"; };
 		7BC87C30209170E600DC00E7 /* PostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
 		7BC87C31209170E600DC00E7 /* PostViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostViewController.xib; sourceTree = "<group>"; };
+		7BC87C342091FF0100DC00E7 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		7BC87C36209201D300DC00E7 /* GenericTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericTableViewController.swift; sourceTree = "<group>"; };
 		7BD82155208FE2A300992197 /* GenericViewController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GenericViewController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7BD82158208FE2A300992197 /* GenericViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GenericViewController.h; sourceTree = "<group>"; };
 		7BD82159208FE2A300992197 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -165,6 +169,7 @@
 				7BD82158208FE2A300992197 /* GenericViewController.h */,
 				7BD821A6208FE32700992197 /* GenericViewController.swift */,
 				7BD82159208FE2A300992197 /* Info.plist */,
+				7BC87C36209201D300DC00E7 /* GenericTableViewController.swift */,
 			);
 			path = GenericViewController;
 			sourceTree = "<group>";
@@ -189,6 +194,7 @@
 				7B87DCCA2090E9D000256331 /* PostsTableViewController.swift */,
 				7BC87C30209170E600DC00E7 /* PostViewController.swift */,
 				7BC87C31209170E600DC00E7 /* PostViewController.xib */,
+				7BC87C342091FF0100DC00E7 /* UIColor.swift */,
 			);
 			path = GenericViewControllerDemoApp;
 			sourceTree = "<group>";
@@ -414,6 +420,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7BC87C37209201D300DC00E7 /* GenericTableViewController.swift in Sources */,
 				7BD821A7208FE32700992197 /* GenericViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -434,6 +441,7 @@
 				7B87DCCB2090E9D000256331 /* PostsTableViewController.swift in Sources */,
 				7BD82176208FE2BA00992197 /* AppDelegate.swift in Sources */,
 				7BD821AB208FE4A400992197 /* Post.swift in Sources */,
+				7BC87C352091FF0100DC00E7 /* UIColor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

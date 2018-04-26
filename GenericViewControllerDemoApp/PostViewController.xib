@@ -22,7 +22,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="9Go-qY-oty">
-                    <rect key="frame" x="0.0" y="20" width="375" height="627"/>
+                    <rect key="frame" x="0.0" y="70" width="375" height="527"/>
                 </stackView>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BqF-e4-uxv">
                     <rect key="frame" x="172" y="617" width="30" height="30"/>
@@ -34,9 +34,9 @@
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
+                <constraint firstItem="BqF-e4-uxv" firstAttribute="top" secondItem="9Go-qY-oty" secondAttribute="bottom" constant="20" id="7nT-I1-wJ2"/>
                 <constraint firstItem="9Go-qY-oty" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="CuN-9f-KKV"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="BqF-e4-uxv" secondAttribute="bottom" constant="20" id="NBe-JJ-rGT"/>
-                <constraint firstItem="9Go-qY-oty" firstAttribute="bottom" secondItem="BqF-e4-uxv" secondAttribute="bottom" id="aCc-px-ahm"/>
                 <constraint firstItem="9Go-qY-oty" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="f9P-BP-xb4"/>
                 <constraint firstItem="9Go-qY-oty" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="hVT-W5-YCi"/>
                 <constraint firstItem="BqF-e4-uxv" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="hqO-UU-9le"/>
