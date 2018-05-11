@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import GenericViewController
+import GenericViewControllerKit
 
 class PostsTableViewController: GenericTableViewController<[Post]> {
     override func viewDidLoad() {

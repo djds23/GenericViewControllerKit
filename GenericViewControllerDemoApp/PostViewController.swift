@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import GenericViewController
+import GenericViewControllerKit
 
 protocol PostViewControllerDelegate: class {
     func postViewController(postViewController: PostViewController, didToggleLikeFor post: Post)
