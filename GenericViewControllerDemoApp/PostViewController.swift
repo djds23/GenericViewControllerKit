@@ -36,7 +36,7 @@ class PostViewController: GenericViewController<Post> {
     }
     
     override func render() {
-        if let post = self.model {
+        if let post = self.state {
             self.view.backgroundColor = post.liked ? UIColor.pink : UIColor.white
             self.titleLabel.text = post.title
             self.bodyLabel.text = post.body
@@ -48,7 +48,7 @@ class PostViewController: GenericViewController<Post> {
     }
 
     @IBAction func toggleLike(_ sender: Any) {
-        if let post = self.model {
+        if let post = self.state {
             self.delegate?.postViewController(postViewController: self, didToggleLikeFor: post)
         }
     }

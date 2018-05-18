@@ -12,7 +12,7 @@ import GenericViewControllerKit
 class PostsTableViewController: GenericTableViewController<[Post]> {
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.model = [
+        self.state = [
             Post(
                 title: "Swift is Fun",
                 body: "I like writing swift because it has a pleasant type system",
@@ -39,13 +39,13 @@ class PostsTableViewController: GenericTableViewController<[Post]> {
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return self.model?.count ?? 0
+        return self.state?.count ?? 0
     }
 
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
-        guard let post = self.model?[indexPath.row] else {
+        guard let post = self.state?[indexPath.row] else {
             return cell
         }
 
@@ -55,31 +55,31 @@ class PostsTableViewController: GenericTableViewController<[Post]> {
     }
 
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        guard let post = self.model?[indexPath.row] else {
+        guard let post = self.state?[indexPath.row] else {
             return
         }
         let postViewController = PostViewController(nibName: "PostViewController", bundle: Bundle.main)
         self.navigationController?.pushViewController(postViewController, animated: true)
-        postViewController.model = post
+        postViewController.state = post
         postViewController.delegate = self
     }
 }
 
 extension PostsTableViewController: PostViewControllerDelegate {
     func postViewController(postViewController: PostViewController, didToggleLikeFor post: Post) {
-        let index = self.model?.index { (foundPost) -> Bool in
+        let index = self.state?.index { (foundPost) -> Bool in
             foundPost == post
         }
         guard let i = index else {
             return
         }
-        self.model?.remove(at: i)
+        self.state?.remove(at: i)
         let newPost = Post(
             title: post.title,
             body: post.body,
             liked: !post.liked
         )
-        self.model = (self.model ?? []) + [newPost]
-        postViewController.model = newPost
+        self.state = (self.state ?? []) + [newPost]
+        postViewController.state = newPost
     }
 }

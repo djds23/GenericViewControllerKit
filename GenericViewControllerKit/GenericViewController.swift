@@ -8,17 +8,30 @@
 
 import UIKit
 
+protocol StatefulView {
+    associatedtype State
+    var state: State? { get set }
+    func render()
+}
 /// A subclass of UIViewController that leverages swift
 /// generics to have a type safe model-view relationship.
-open class GenericViewController<ModelType>: UIViewController {
+open class GenericViewController<State>: UIViewController, StatefulView {
 
-    /// `model` a generic property that should
+    /// `state` a generic property that should
     /// contain data needed for the `render`
     /// function to bind data to the view.
-    open var model: ModelType? {
+    open var state: State? {
         didSet {
             self.render()
         }
+    }
+
+    /// `render()` should be overriden and code that binds
+    /// the UI to the new data should be placed here.
+    /// This method will be called when the view loads,
+    /// and every subseqeunt time when a new model is set.
+    open func render() {
+        // #warning Incomplete implementation, override to update your view when the model changes
     }
 
     /// Hook to call `render()` on
@@ -33,13 +46,5 @@ open class GenericViewController<ModelType>: UIViewController {
     override open func viewDidLoad() {
         super.viewDidLoad()
         self.render()
-    }
-
-    /// `render()` should be overriden and code that binds
-    /// the UI to the new data should be placed here.
-    /// This method will be called when the view loads,
-    /// and every subseqeunt time when a new model is set.
-    open func render() {
-        // #warning Incomplete implementation, override to update your view when the model changes
     }
 }

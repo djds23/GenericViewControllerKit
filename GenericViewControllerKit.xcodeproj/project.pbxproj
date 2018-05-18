@@ -12,6 +12,8 @@
 		7BC87C33209170E600DC00E7 /* PostViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7BC87C31209170E600DC00E7 /* PostViewController.xib */; };
 		7BC87C352091FF0100DC00E7 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC87C342091FF0100DC00E7 /* UIColor.swift */; };
 		7BC87C37209201D300DC00E7 /* GenericTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC87C36209201D300DC00E7 /* GenericTableViewController.swift */; };
+		7BCF989E20AF9BDB009F1F26 /* GenericCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BCF989D20AF9BDB009F1F26 /* GenericCollectionViewController.swift */; };
+		7BCF98A020AF9CC0009F1F26 /* GenericView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BCF989F20AF9CC0009F1F26 /* GenericView.swift */; };
 		7BD8215F208FE2A300992197 /* GenericViewControllerKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BD82155208FE2A300992197 /* GenericViewControllerKit.framework */; };
 		7BD82164208FE2A300992197 /* GenericViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BD82163208FE2A300992197 /* GenericViewControllerTests.swift */; };
 		7BD82166208FE2A300992197 /* GenericViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 7BD82158208FE2A300992197 /* GenericViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -77,6 +79,8 @@
 		7BC87C31209170E600DC00E7 /* PostViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostViewController.xib; sourceTree = "<group>"; };
 		7BC87C342091FF0100DC00E7 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		7BC87C36209201D300DC00E7 /* GenericTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericTableViewController.swift; sourceTree = "<group>"; };
+		7BCF989D20AF9BDB009F1F26 /* GenericCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericCollectionViewController.swift; sourceTree = "<group>"; };
+		7BCF989F20AF9CC0009F1F26 /* GenericView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericView.swift; sourceTree = "<group>"; };
 		7BD82155208FE2A300992197 /* GenericViewControllerKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GenericViewControllerKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7BD82158208FE2A300992197 /* GenericViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GenericViewController.h; sourceTree = "<group>"; };
 		7BD82159208FE2A300992197 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -170,6 +174,8 @@
 				7BD821A6208FE32700992197 /* GenericViewController.swift */,
 				7BD82159208FE2A300992197 /* Info.plist */,
 				7BC87C36209201D300DC00E7 /* GenericTableViewController.swift */,
+				7BCF989D20AF9BDB009F1F26 /* GenericCollectionViewController.swift */,
+				7BCF989F20AF9CC0009F1F26 /* GenericView.swift */,
 			);
 			path = GenericViewControllerKit;
 			sourceTree = "<group>";
@@ -420,6 +426,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7BCF98A020AF9CC0009F1F26 /* GenericView.swift in Sources */,
+				7BCF989E20AF9BDB009F1F26 /* GenericCollectionViewController.swift in Sources */,
 				7BC87C37209201D300DC00E7 /* GenericTableViewController.swift in Sources */,
 				7BD821A7208FE32700992197 /* GenericViewController.swift in Sources */,
 			);

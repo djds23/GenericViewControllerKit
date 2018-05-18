@@ -1,27 +1,26 @@
 //
-//  GenericTableViewController.swift
-//  GenericViewController
+//  GenericCollectionViewController.swift
+//  GenericViewControllerKit
 //
-//  Created by Dean Silfen on 4/26/18.
+//  Created by Dean Silfen on 5/18/18.
 //  Copyright © 2018 Dean Silfen. All rights reserved.
 //
 
 import UIKit
 
-/// A subclass of UITableViewController that leverages swift
-/// generics to have a type safe model-view relationship.
-open class GenericTableViewController<State>: UITableViewController, StatefulView {
-    
+private let reuseIdentifier = "Cell"
+
+class GenericCollectionViewController<State>: UICollectionViewController, StatefulView {
     /// `state` a generic property that should
     /// be used to determine the behavior and look
     /// of the tableView. When a new model is set,
     /// the tableView will be reloaded.
     open var state: State? {
         didSet {
-            self.tableView.reloadData()
+            self.collectionView?.reloadData()
         }
     }
-
+    
     /// `render()` should be overriden and code that binds
     /// the UI to the new data should be placed here.
     /// This method will be called when the view loads,
@@ -29,14 +28,7 @@ open class GenericTableViewController<State>: UITableViewController, StatefulVie
     func render() {
         // #warning Incomplete implementation, override to update your view when the model changes
     }
-
-    open override func viewDidLoad() {
+    override func viewDidLoad() {
         super.viewDidLoad()
-        self.render()
-    }
-
-    open override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
 }
