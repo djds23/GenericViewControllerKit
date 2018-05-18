@@ -14,7 +14,7 @@
 			<key>orderHint</key>
 			<integer>1</integer>
 		</dict>
-		<key>GenericViewControllerKit.xcscheme</key>
+		<key>GenericViewControllerKit.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
@@ -23,6 +23,19 @@
 		<dict>
 			<key>orderHint</key>
 			<integer>1</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>7BD82154208FE2A200992197</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>7BD8215D208FE2A300992197</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>
